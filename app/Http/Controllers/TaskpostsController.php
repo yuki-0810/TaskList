@@ -77,6 +77,8 @@ class TaskpostsController extends Controller
             return view('TaskList.edit', [
                 'taskpost' => $taskpost,
              ]);
+        } else {
+            return redirect('/');
         }
     }
 
